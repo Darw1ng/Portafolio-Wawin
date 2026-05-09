@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wawin — Desarrollador de Software</title>
+    <meta name="description" content="Portafolio de Erick Jiménez — desarrollador de software enfocado en construir productos digitales con impacto real." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- CANVAS BACKGROUND -->
+<canvas id="stars-canvas"></canvas>
+
+<div class="content-wrapper">
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="logo">Wawin<span class="accent-dot">.</span></span>
+            <ul class="nav-links">
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-menu-btn" id="navMenuBtn" aria-label="Abrir menú">&#9776;</button>
+        </div>
+        <ul class="nav-links-mobile" id="navMobile">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hola, soy</p>
+            <h1>Wawin</h1>
+            <p class="subtitle">Desarrollador de Software</p>
+            <p class="hero-desc">
+                Construyo aplicaciones web y móviles que combinan diseño cuidadoso con código limpio.
+                Me enfoco en la experiencia del usuario y en soluciones que escalan.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="cta-button">Ver proyectos</a>
+                <a href="#contacto" class="cta-button outline">Contacto</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ─── PROYECTOS DESTACADOS ─── -->
+    <section id="proyectos" class="section">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-subtitle">
+            Una selección de trabajos recientes. Haz clic en cualquier tarjeta para ver más detalles.
+        </p>
+
+        <!-- Tarjetas fijas (2 columnas) -->
+        <div class="featured-projects">
+            <div class="project-card featured"
+                 data-title="Animalotchi"
+                 data-desc="Juego de mascota virtual con mecánicas de cuidado, estadísticas en tiempo real y sistema de eventos aleatorios. Desarrollado con JavaScript vanilla y Canvas API."
+                 data-tech="JavaScript, Canvas API, CSS3, HTML5"
+                 data-status="LIVE"
+                 data-img="img/animalotchi.png"
+                 data-link="#">
+                <span class="project-status-badge">LIVE</span>
+                <div class="project-image">
+                    <img src="img/animalotchi.png" alt="Animalotchi" />
+                    <div class="project-overlay"><span>Ver detalles</span></div>
+                </div>
+                <div class="project-content">
+                    <h3>Animalotchi</h3>
+                    <p>Mascota virtual interactiva con sistema de cuidado, estadísticas y eventos aleatorios. Lógica de juego construida con JS puro.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured view-more"
+                 data-link="https://github.com/Darw1ng">
+                <div class="view-more-content">
+                    <div class="view-more-plus">+</div>
+                    <h3>Más proyectos</h3>
+                    <p>Visita mi GitHub para ver el resto del trabajo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="projects-carousel-container">
+            <div class="projects-carousel" id="carousel">
+
+                <div class="project-card"
+                     data-title="Portafolio Personal"
+                     data-desc="Sitio web de portafolio personal con animación de partículas en Canvas, diseño oscuro con acento teal, carrusel de proyectos y modales de detalle."
+                     data-tech="HTML5, CSS3, JavaScript, Canvas API"
+                     data-status="LIVE"
+                     data-img="img/qeaaeo.png"
+                     data-link="#">
+                    <span class="project-status-badge">LIVE</span>
+                    <div class="project-image">
+                        <img src="img/qeaaeo.png" alt="Portafolio" />
+                        <div class="project-overlay"><span>Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portafolio Wawin</h3>
+                        <p>Este mismo sitio. Canvas animado, carrusel responsive, modales de proyecto y diseño 100% vanilla.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Proyecto 2"
+                     data-desc="Descripción del proyecto. Agrega aquí el contexto, tecnologías usadas y el impacto que tuvo."
+                     data-tech="React, Node.js, PostgreSQL"
+                     data-status="WIP"
+                     data-img="img/qeaaeo.png"
+                     data-link="#">
+                    <span class="project-status-badge">WIP</span>
+                    <div class="project-image">
+                        <img src="img/qeaaeo.png" alt="Proyecto 2" />
+                        <div class="project-overlay"><span>Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto. Agrega aquí el contexto y el impacto.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Proyecto 3"
+                     data-desc="Descripción del proyecto. Agrega aquí el contexto, tecnologías usadas y el impacto que tuvo."
+                     data-tech="Vue.js, Firebase"
+                     data-status="LIVE"
+                     data-img="img/qeaaeo.png"
+                     data-link="#">
+                    <span class="project-status-badge">LIVE</span>
+                    <div class="project-image">
+                        <img src="img/qeaaeo.png" alt="Proyecto 3" />
+                        <div class="project-overlay"><span>Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción breve del proyecto. Agrega aquí el contexto y el impacto.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Proyecto 4"
+                     data-desc="Descripción del proyecto. Agrega aquí el contexto, tecnologías usadas y el impacto que tuvo."
+                     data-tech="Python, FastAPI, Docker"
+                     data-status="LIVE"
+                     data-img="img/qeaaeo.png"
+                     data-link="#">
+                    <span class="project-status-badge">LIVE</span>
+                    <div class="project-image">
+                        <img src="img/qeaaeo.png" alt="Proyecto 4" />
+                        <div class="project-overlay"><span>Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Proyecto 4</h3>
+                        <p>Descripción breve del proyecto. Agrega aquí el contexto y el impacto.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn" id="nextBtn" aria-label="Siguiente">&#8594;</button>
+        </div>
+        <div class="carousel-indicators" id="indicators"></div>
+    </section>
+
+    <!-- ─── STACK ─── -->
+    <section id="stack" class="stack-section">
+        <h2 class="section-title">Stack</h2>
+        <p class="section-subtitle">Tecnologías con las que trabajo día a día.</p>
+
+        <div class="stack-grid">
+            <div class="stack-category">
+                <div class="stack-cat-title">Frontend</div>
+                <div class="stack-items">
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">JavaScript</span>
+                            <span class="stack-pct">90%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">React</span>
+                            <span class="stack-pct">80%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">CSS / Tailwind</span>
+                            <span class="stack-pct">85%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">Vue.js</span>
+                            <span class="stack-pct">65%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="65"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <div class="stack-cat-title">Backend</div>
+                <div class="stack-items">
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">Node.js</span>
+                            <span class="stack-pct">78%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="78"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">Python</span>
+                            <span class="stack-pct">70%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="70"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">PostgreSQL</span>
+                            <span class="stack-pct">72%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="72"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">Firebase</span>
+                            <span class="stack-pct">68%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="68"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-category stack-interests">
+                <div class="stack-cat-title">Intereses</div>
+                <div class="interest-tags">
+                    <span class="interest-tag">UX/UI</span>
+                    <span class="interest-tag">Machine Learning</span>
+                    <span class="interest-tag">Open Source</span>
+                    <span class="interest-tag">DevOps</span>
+                    <span class="interest-tag">APIs REST</span>
+                    <span class="interest-tag">Mobile Dev</span>
+                    <span class="interest-tag">Accesibilidad</span>
+                    <span class="interest-tag">Performance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EXPERIENCIA / HISTORIA ─── -->
+    <section id="experiencia" class="section">
+        <h2 class="section-title">Experiencia</h2>
+        <p class="section-subtitle">Mi recorrido hasta aquí.</p>
+
+        <div class="timeline">
+
+            <div class="timeline-item highlight">
+                <div class="timeline-dot now"></div>
+                <div class="timeline-year">2025 — HOY</div>
+                <div class="timeline-content">
+                    <h3>Desarrollo Freelance</h3>
+                    <p>
+                        Proyectos web independientes para clientes locales y remotos.
+                        Diseño, desarrollo e implementación de principio a fin.
+                    </p>
+                    <span class="timeline-badge">Activo</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot accent"></div>
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                    <h3>Primer proyecto de producción</h3>
+                    <p>
+                        Lancé mi primera aplicación con usuarios reales. Aprendí sobre ciclos de vida
+                        de producto, feedback real y la diferencia entre código que funciona y código que escala.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">
+                    <h3>Inicio en programación</h3>
+                    <p>
+                        Primeras líneas de código. HTML, CSS y JavaScript. La curiosidad por entender
+                        cómo funcionan las cosas se convirtió en mi motor principal.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="historia-content" style="margin-top: 4rem;">
+            <p>
+                Soy Erick, desarrollador de software con enfoque en el producto completo —
+                desde la interfaz hasta la base de datos. Me gusta construir cosas que la gente
+                realmente use y que resuelvan problemas concretos.
+            </p>
+            <p>
+                Trabajo mejor en entornos donde hay autonomía, donde se puede iterar rápido
+                y donde el código importa tanto como el resultado final.
+            </p>
+        </div>
+        <div class="enfoque-cta">
+            <a href="#contacto" class="cta-button">Hablemos</a>
+        </div>
+    </section>
+
+    <!-- ─── CONTACTO ─── -->
+    <section id="contacto" class="contact">
+        <div style="max-width:700px; margin:0 auto; text-align:center;">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-subtitle">
+                ¿Tienes un proyecto en mente o quieres colaborar?<br />
+                Escríbeme y lo platicamos.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:jimdom340@gmail.com" class="contact-link">
+                    <span class="contact-icon">✉</span>
+                    <span>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-detail">jimdom340@gmail.com</span>
+                    </span>
+                </a>
+                <a href="https://github.com/Darw1ng" target="_blank" rel="noopener" class="contact-link">
+                    <span class="contact-icon">&#128736;</span>
+                    <span>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-detail">Darw1ng</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <span>Wawin<span class="footer-accent">.</span> &copy; 2025</span>
+    </footer>
+
+</div><!-- /content-wrapper -->
+
+<!-- ─── MODAL ─── -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose" aria-label="Cerrar">&#10005;</button>
+        <div class="modal-image-wrap">
+            <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-body">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="modal-status-badge" id="modalStatus"></span>
+            </div>
+            <p id="modalDesc"></p>
+            <div class="modal-tech-wrap" id="modalTech"></div>
+            <div class="modal-cta">
+                <a id="modalLink" href="#" target="_blank" rel="noopener" class="cta-button">
+                    Ver proyecto
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
