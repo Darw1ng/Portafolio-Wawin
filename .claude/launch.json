@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portafolio-wawin",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3000", "C:/Users/kiki_/WebstormProjects/Portafolio-Wawin"],
+      "port": 3000
+    }
+  ]
+}
